@@ -1,0 +1,60 @@
+#opcao-bolos:checked ~ #menu-bebidas{
+    display: none;
+}
+
+#opcao-bebidas:checked ~ #menu-bolos{
+    display: none;
+}
+
+.menu{
+    width: 100%;
+}
+
+body{
+    background: #3d1a11;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+label{
+    background-color: #563429;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 4em;
+    color: white;
+    display: block;
+    font-size: 75%;
+    padding: 4em 0 1em;
+    text-transform: uppercase;
+}
+
+label[for=opcao-bolos]{
+    background-image: url(imagens/icone-bolos.svg);
+}
+label[for=opcao-bebidas]{
+    background-image: url(imagens/icone-bebidas.svg);
+}
+
+input[type=radio]:checked + label{
+    background-color: #e4876d;
+}
+
+label{
+    width: 50%;
+    
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+label[for=opcao-bolos]{
+    left: 0;
+}
+label[for=opcao-bebidas]{
+    right: 0;
+}
