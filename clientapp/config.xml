@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="org.moniqueaz.cenourapp"
+        version="1.0.0">
+
+    <name>
+        Só de Cenoura
+    </name>
+
+    <description>
+        Menu do restaurante Só de Cenoura.
+    </description>
+
+    <author href="http://moniqueaz.org" email="qualquer@moniqueaz.org">
+        Sérgio Lopes
+    </author>
+
+    <icon src="icon.png" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <splash src="splash.png" />
+
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+
+    <platform name="android" />
+
+</widget>
