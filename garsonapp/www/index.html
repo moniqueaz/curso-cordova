@@ -12,9 +12,14 @@
         
     <div class="topo-fixo z-depth-1">
         <div class="yellow darken-4 white-text valign-wrapper">
-        <h5 class="titulo">Só de Cenoura</h5>
-
-        <i class="material-icons waves-effect waves-light waves-circle">more_vert</i>
+            <h5 class="titulo">Só de Cenoura</h5>
+            
+            <div>
+                <i data-activates="submenu" data-gutter="5" data-contrainwidth="false" class="material-icons waves-effect waves-light waves-circle dropdown-button" >more_vert</i>
+            </div>
+            <ul class="dropdown-content" id="submenu">
+                <li><a class="black-text acao-limpar">Limpar</a></li>
+            </ul>   
         </div>
     
     <ul class="tabs yellow darken-4">
@@ -23,20 +28,20 @@
     </ul>
     </div>
     <div class="section" id="bolos">
-        <h6 class="container">Em pedaços</h6>
+        <h6 class="container brown-text">Em pedaços</h6>
         <div class="collection">
-            <a class="collection-item waves-effect">Só de Cenoura</a>
-            <a class="collection-item waves-effect">Com Nutella</a>
-            <a class="collection-item waves-effect">De Brigadeiro</a>
-            <a class="collection-item waves-effect">Açucarado</a>
+            <a class="collection-item waves-effect black-text">Só de Cenoura</a>
+            <a class="collection-item waves-effect black-text">Com Nutella</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado</a>
         </div>
     
-        <h6 class="container">Inteiro</h6>
+        <h6 class="container brown-text">Inteiro</h6>
         <div class="collection">
-            <a class="collection-item waves-effect">Só de Cenoura inteiro</a>
-            <a class="collection-item waves-effect">Com Nutella inteiro</a>
-            <a class="collection-item waves-effect">De Brigadeiro inteiro</a>
-            <a class="collection-item waves-effect">Açucarado inteiro</a>
+            <a class="collection-item waves-effect black-text">Só de Cenoura inteiro</a>
+            <a class="collection-item waves-effect black-text">Com Nutella inteiro</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro inteiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado inteiro</a>
         </div>
     </div>
     
@@ -55,8 +60,30 @@
             <a class="collection-item waves-effect black-text">Guaraná</a>
         </div>
     </div>
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect wave-light brown modal-trigger">
+            <i class="material-icons">done</i>
+        </a>
+    </div>
+
+    <div class="modal modal-fixed-footer" id="confirmacao">
+        <div class="modal-content">
+            <h5>Resumo do pedido</h5>
+            <input type="number" class="validate" id="numero-mesa" placeholder="Número da mesa">
+            <blockquote id="resumo"></blockquote>
+        </div>
+        <div class="modal-footer">
+            <button class="btn deep-orange waves-effect waves-light modal-close">
+                Pedir
+            </button>
+            <button class="acao-limpar btn-flat waves-effect waves-red modal-close">
+                Cancelar
+            </button>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
