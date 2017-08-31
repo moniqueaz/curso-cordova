@@ -12,6 +12,9 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "br.eti.moniqueaz.garsonapp"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "br.eti.moniqueaz.garsonapp"
         }
     },
     "dependent_plugins": {}

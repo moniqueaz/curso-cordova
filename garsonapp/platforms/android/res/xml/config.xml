@@ -8,6 +8,9 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
     <name>Garçonete Só de Cenoura</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -15,6 +18,7 @@
     <author email="moniqueaz.si@gmail.com" href="http://cordova.io">
         Apache Cordova Team
     </author>
+    <access origin="http://cozinhapp.sergiolopes.org" />
     <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
     <plataform name="android">
         <preference name="StatusBarBackgroundColor" value="#e86c13" />
